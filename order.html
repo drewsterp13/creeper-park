@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link rel="stylesheet" href="assets/css/style.css">
+<title>Creeper's Impact Ticket Order</title>
+</head>
+<body class="bg-info">
+
+    <!-- Navbar NOTE: This is slightly different where instead of the navbar having links, it is replaced with a 
+    red button called "Cancel" -->
+    <nav class="bg-success text-light d-flex flex-column flex-md-row align-items-center justify-content-between p-2">
+        <h1>Creeper's Impact Nat'l Park</h1>
+        <a href="main.html"><input type="button" value="CANCEL" class="p-2 m-1 bg-danger text-light fw-bold"></a>
+    </nav>
+
+    <!-- Order Page -->
+    <div class="text-dark p-1 text-center align-items-center d-flex flex-column">
+        <h3>Order Tickets</h3>
+        <div class="col-10 col-md-8 col-lg-6 p-2 bg-light d-flex flex-column">
+            <h4>Your Info</h4>
+            <div class="col-12 d-flex flex-column flex-md-row justify-content-center align-items-center">
+                <div class="col-6 col-sm-10 col-md-6 d-flex flex-column align-items-center">
+                    <h5 class="p-1">First Name:</h5>
+                    <input class="p-1" type="text" name="firstname" id="firstname">
+                </div>
+                <div class="col-6 col-10 col-md-6 d-flex flex-column  align-items-center">
+                    <h5 class="p-1">Last Name:</h5>
+                    <input class="p-1" type="text" name="lastname" id="lastname">
+                </div>
+            </div>
+            <div class="col-12 d-flex flex-column flex-md-row justify-content-center align-items-center">
+                <div class="col-6 col-sm-10 col-md-6 d-flex flex-column align-items-center">
+                    <h5 class="p-1">Street Address:</h5>
+                    <input class="p-1" type="text" name="street" id="street">
+                </div>
+                <div class="col-6 col-10 col-md-6 d-flex flex-column justify-content-center align-items-center">
+                    <h5 class="p-1">City:</h5>
+                    <input class="p-1" type="text" name="city" id="city">
+                </div>
+            </div>
+            <div class="col-12 d-flex flex-column flex-md-row justify-content-center align-items-center">
+                <div class="col-6 col-sm-10 col-md-6 d-flex flex-column align-items-center">
+                    <h5 class="p-1">State/Providence:</h5>
+                    <input class="p-1" type="text" name="state" id="state">
+                </div>
+                <div class="col-6 col-10 col-md-6 d-flex flex-column align-items-center">
+                    <h5 class="p-1">Zip Code:</h5>
+                    <input class="p-1" type="text" name="zip" id="zip">
+                </div>
+            </div>
+            <div class="col-12 d-flex flex-column flex-md-row justify-content-center align-items-center">
+                <div class="col-6 col-sm-10 col-md-6 d-flex flex-column align-items-center">
+                    <h5 class="p-1">Phone Number:</h5>
+                    <input class="p-1" type="text" name="phone" id="phone">
+                </div>
+                <div class="col-6 col-10 col-md-6 d-flex flex-column  align-items-center">
+                    <h5 class="p-1">Email Address:</h5>
+                    <input class="p-1" type="text" name="email" id="email">
+                </div>
+            </div>
+            <h4 class="mt-5">Amount of Tickets</h4>
+            <div class="col-12 d-flex flex-column flex-md-row justify-content-center align-items-center">
+                <div class="col-6 col-sm-10 col-md-6 d-flex flex-column align-items-center">
+                    <h5 class="p-1">Tickets:</h5>
+                    <input class="p-1" type="number" name="tickets" id="tickets">
+                    <p>PRICE: $9.99/ticket</p>
+                </div>
+                <div class="col-6 col-10 col-md-6 d-flex flex-column  align-items-center">
+                    <h5 class="p-1">Kids Tickets*:</h5>
+                    <input class="p-1" type="number" name="kidtickets" id="kidtickets">
+                    <p>PRICE: $3.99/ticket</p>
+                </div>
+            </div>
+            <p class="text-secondary">*Kids Tickets are only for those who are 12 years of age or younger.</p>
+            <h4 class="mt-2">Enter Date</h4>
+            <div class="col-12 d-flex flex-column flex-md-row justify-content-center align-items-center">
+                <div class="col-6 col-sm-10 col-md-6 d-flex flex-column align-items-center">
+                    <input class="p-1" type="date" name="firstdate" id="firstdate">
+                </div>
+            </div>
+            <a class="p-5" href="main.html"><input type="button" value="ORDER HERE" class="p-3 m-1 bg-primary text-light fw-bold"></a>
+        </div>
+    </div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+</body>
+</html>
